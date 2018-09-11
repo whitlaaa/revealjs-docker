@@ -61,6 +61,16 @@ This will readonly mount your `presentation` directory into the appropriate loca
 
 With the container running, you can continue to modify your local `slides.md` and `themes.html` files as you see fit. Changes will be visible on browser refresh.
 
+### Publishing slides
+
+Once you're ready to publish your slides, you can easily copy the complete directory from the running container:
+
+```shell
+docker cp $CONTAINER_ID:/usr/share/nginx/html my-presentation-directory
+```
+
+Now just send `my-presentation-directory` to your favorite hosting provider and you're good to go!
+
 [RevealJS]: https://github.com/hakimel/reveal.js/
 [Docker]: https://www.docker.com
 [Markdown]: https://github.com/hakimel/reveal.js/#markdown
