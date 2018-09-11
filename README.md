@@ -4,7 +4,7 @@ Provides a simplified way to work on [RevealJS] slides via [Docker].
 
 ## Docker image
 
-The provided Docker image is relatively simple, pulling down RevealJS and ultimately building a smaller image based off of `nginx:alpine`. While this does keep the image size
+The provided Docker image is relatively simple, pulling down RevealJS and ultimately building a smaller image based off of `nginx:alpine`. This keeps the image size smaller at the expense of tools like livereload, etc.
 
 ## Project structure
 
