@@ -75,4 +75,4 @@ Now just send `my-presentation-directory` to your favorite hosting provider and 
 [Docker]: https://www.docker.com
 [Markdown]: https://github.com/hakimel/reveal.js/#markdown
 [themes]: https://github.com/hakimel/reveal.js/#theming
-[sample slides]: presentation/slides.md
+[sample slides]: sample-presentation/slides.md
