@@ -52,7 +52,7 @@ presenation files into the container. Further details below.
 With the `presentation` directory in place, we can simply use Docker volume mounts to get our slides and customizations in place.
 
 ```shell
-docker run -p 8080:80 -v /path/to/presentation/directory:/usr/share/nginx/html/presenation:ro whitlaaa/revealjs-docker
+docker run -p 8080:80 -v /path/to/presentation/directory:/usr/share/nginx/html/presentation:ro whitlaaa/revealjs
 ```
 
 This will readonly mount your `presentation` directory into the appropriate location to be served by Nginx. Note that you can name your directory whatever you'd like, but it MUST be mounted as `presentation` when serving.

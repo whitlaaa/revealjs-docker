@@ -16,6 +16,7 @@ publish:docker:
     docker login -u "$DOCKER_HUB_USER" -p "$DOCKER_HUB_PASSWORD" $REGISTRY
     docker build --pull -t "$REGISTRY_IMAGE:$CI_COMMIT_REF_NAME" .
     docker push "$REGISTRY_IMAGE:$CI_COMMIT_REF_NAME"
+    docker push "$REGISTRY_IMAGE:latest"
   only:
     - /^v*/
   except:
