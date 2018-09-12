@@ -2,7 +2,7 @@ stages:
   - publish
 
 variables:
-  REGISTRY: index.docker.io
+  REGISTRY: docker.io
   REGISTRY_IMAGE: $DOCKER_HUB_USER/revealjs
 
 image: docker:latest
