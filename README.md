@@ -12,7 +12,7 @@ The created image has some small customizations to make working on slides requir
 
 * `index.html` pulls slides and your theme selection from a `presentation` directory:
   * `presentation/slides.md` is a single Markdown file for building your slides. This has the downside of requiring a single file for all slides, so it may not be ideal for complex presentations or those with a ton of slides.
-  * `presentation/themes.html` is used as an HTML import and allows you to select from RevealJS' available slide deck [themes] (defaults to `black`)
+  * `presentation/theme.css` is just used as a CSS import and allows you to select from RevealJS' available slide deck [themes] (defaults to `black`)
 
 ## Creating a presentation
 
@@ -24,17 +24,12 @@ Slides follow the standard rules set by RevealJS, with the addition of vertical 
 
 ### Theme selection
 
-The `presentation/themes.html` file is about as simple as possible:
+The `presentation/theme.css` file is about as simple as possible:
 
-```html
-<!-- Theme used for slides. Change `black` to another choice to change. -->
-<link rel="stylesheet" href="../css/theme/black.css">
-
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="../lib/css/zenburn.css">
+```css
+/* Theme used for slides. Change `black` to another choice to change. */
+@import "../css/theme/black.css"
 ```
-
-This project uses the default syntax highlighting theme of `zenburn`. If you choose to customize it , you will need to mount the desired theme files yourself.
 
 ### Using local images
 
@@ -59,7 +54,7 @@ This will readonly mount your `presentation` directory into the appropriate loca
 
 ### Developing slides
 
-With the container running, you can continue to modify your local `slides.md` and `themes.html` files as you see fit. Changes will be visible on browser refresh.
+With the container running, you can continue to modify your local `slides.md` and `theme.css` files as you see fit. Changes will be visible on browser refresh.
 
 ### Publishing slides
 
