@@ -1,4 +1,5 @@
 FROM node:alpine as builder
+LABEL maintainer="alex.whitler@gmail.com"
 WORKDIR /public
 ENV REVEALJS_VERSION 3.7.0
 ADD https://github.com/hakimel/reveal.js/archive/${REVEALJS_VERSION}.tar.gz .
